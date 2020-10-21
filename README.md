@@ -3,7 +3,7 @@ ds-modal-js - lightweight and easy to use javascript modal window
 
 
 ## Demo
-link to demo site
+https://shkredovdmitriy.github.io/ds-modal-demo/
 
 ## Installation
 ```
