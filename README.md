@@ -1,4 +1,4 @@
-# ds-modal
+# ds-modal-js
 ds-modal-js - lightweight and easy to use javascript modal window.
 
 # Demo
