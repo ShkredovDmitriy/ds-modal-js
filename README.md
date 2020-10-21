@@ -5,8 +5,9 @@ ds-modal-js - lightweight and easy to use javascript modal window.
 link to demo site
 
 # Installation
-
+```
 npm install ds-modal-js -save
+```
 
 # Usage
 
