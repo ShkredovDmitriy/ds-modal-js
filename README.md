@@ -1,5 +1,5 @@
 # ds-modal
-ds-modal - lightweight and easy to use jQuery modal window
+ds-modal - lightweight and easy to use javascript modal window
 
 # Demo
 link to demo site
