@@ -1,14 +1,13 @@
 {
-  "name": "ds-modal",
+  "name": "ds-modal-js",
   "version": "1.0.0",
-  "description": "ds-modal - lightweight and easy to use javascript modal window",
-  "main": ".eslintrc.js",
+  "description": "ds-modal-js - lightweight and easy to use javascript modal window",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShkredovDmitriy/ds-modal.git"
+    "url": "git+https://github.com/ShkredovDmitriy/ds-modal-js.git"
   },
   "keywords": [
     "modal",
@@ -17,11 +16,11 @@
   "author": {
     "name": "Dmitriy Shkredov",
     "email": "ShkredovDmitriy@gmail.com",
-    "url": "https://github.com/ShkredovDmitriy/ds-modal"
+    "url": "https://github.com/ShkredovDmitriy/ds-modal-js"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ShkredovDmitriy/ds-modal/issues"
+    "url": "https://github.com/ShkredovDmitriy/ds-modal-js/issues"
   },
-  "homepage": "https://github.com/ShkredovDmitriy/ds-modal#readme"
+  "homepage": "https://github.com/ShkredovDmitriy/ds-modal-js#readme"
 }
