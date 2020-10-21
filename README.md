@@ -17,6 +17,7 @@ import dsModal from 'ds-modal-js';
 ```
 dsModal.init();
 ```
+```
 @import 'ds-modal-js/src/ds-modal.scss'
 ```
 
