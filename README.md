@@ -1,12 +1,12 @@
 # ds-modal
-ds-modal - lightweight and easy to use javascript modal window
+ds-modal-js - lightweight and easy to use javascript modal window.
 
 # Demo
 link to demo site
 
 # Installation
 
-npm install ds-modal -save
+npm install ds-modal-js -save
 
 # Usage
 
