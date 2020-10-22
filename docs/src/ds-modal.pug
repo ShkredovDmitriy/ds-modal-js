@@ -1,0 +1,8 @@
+mixin dsModal(title, dataValue, text)
+  .ds-modal-container(data-ds-modal=dataValue)
+    .ds-modal-wrapper
+      .ds-modal
+        .ds-modal-close
+        .ds-modal-header= title
+        .ds-modal-body= text
+        .ds-modal-footer

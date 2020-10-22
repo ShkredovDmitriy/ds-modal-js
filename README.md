@@ -27,4 +27,3 @@ dsModal.init();
 ## Credits
 
 ## License
-
