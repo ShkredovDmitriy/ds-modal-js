@@ -21,7 +21,6 @@ dsModal.init();
 @import 'ds-modal-js/src/ds-modal.scss'
 ```
 
-## Contributing
 
 ## History
 
