@@ -133,12 +133,12 @@ const commonPack = merge([
         {
           from: "main.css",
           context: path.resolve(__dirname, "docs", "css"),
-          to: `${PATHS.pack}/dist/dsModal.min.css`
+          to: `${PATHS.pack}/dist/ds-modal.min.css`
         },
         {
           from: "main.js",
           context: path.resolve(__dirname, "docs", "js"),
-          to: `${PATHS.pack}/dist/dsModal.min.js`
+          to: `${PATHS.pack}/dist/ds-modal.min.js`
         },
         {
           from: "LICENSE",
