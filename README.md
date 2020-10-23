@@ -48,8 +48,10 @@ import dsModal from 'ds-modal-js';
 Specify data-ds-modal-open on the button and data-ds-modal on the modal window, for example "example-modal". This is enough to work.
 
 ## Use in manual mode
+```
 dsModal.open("example-modal");
 dsModal.close("example-modal");
+```
 
 ## History
 
