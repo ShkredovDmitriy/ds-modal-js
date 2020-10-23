@@ -16,11 +16,11 @@ https://shkredovdmitriy.github.io/ds-modal-js/
 
 Add this line to head
 ```
-<link href="https://unpkg.com/ds-modal-js@0.1.21/dist/ds-modal.min.css" rel="stylesheet">
+<link href="https://unpkg.com/ds-modal-js@0.1.22/dist/ds-modal.min.css" rel="stylesheet">
 ```
 Add this line to the bottom of the body
 ```
-<script src="https://unpkg.com/ds-modal-js@0.1.21/dist/ds-modal.min.js"></script>
+<script src="https://unpkg.com/ds-modal-js@0.1.22/dist/ds-modal.min.js"></script>
 ```
 
 ### Installation
