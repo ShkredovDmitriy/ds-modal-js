@@ -2,10 +2,10 @@
 ds-modal-js - lightweight and easy to use javascript modal window
 
 
-## Demo
+### Demo
 https://shkredovdmitriy.github.io/ds-modal-js/
 
-## Without installation
+### Without installation
 
 Add this line to head
 ```
@@ -16,7 +16,7 @@ Add this line to the bottom of the body
 <script src="https://unpkg.com/ds-modal-js@0.1.21/dist/ds-modal.min.js"></script>
 ```
 
-## Installation
+### Installation
 ```
 npm install ds-modal-js -save
 ```
@@ -26,7 +26,7 @@ import dsModal from 'ds-modal-js';
 ```
 @import 'ds-modal-js/src/ds-modal.scss';
 ```
-## Simple working example
+### Simple working example
 ```
 <button data-ds-modal-open="example-modal">
   Open example modal
@@ -44,10 +44,10 @@ import dsModal from 'ds-modal-js';
   </div>
 </div>
 ```
-## Use in automatic mode
+### Use in automatic mode
 Specify data-ds-modal-open on the button and data-ds-modal on the modal window, for example "example-modal". This is enough to work.
 
-## Use in manual mode
+### Use in manual mode
 ```
 dsModal.open("example-modal");
 ```
@@ -55,7 +55,7 @@ dsModal.open("example-modal");
 dsModal.close("example-modal");
 ```
 
-## History
+### History
 
-## License
+### License
 MIT License
