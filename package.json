@@ -70,6 +70,7 @@
     "@babel/runtime": "^7.4.4",
     "babel-polyfill": "^6.26.0",
     "dotenv-webpack": "^1.7.0",
+    "ds-modal-js": "^0.1.2",
     "es6-promise": "^4.2.6",
     "es6-promise-promise": "^1.0.0",
     "fast-async": "^6.3.8",
