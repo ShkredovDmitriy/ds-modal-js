@@ -12,10 +12,10 @@ npm install ds-modal-js -save
 
 ## Usage
 ```
-import dsModal from 'ds-modal-js/dist/ds-modal.min.js';
+import dsModal from 'ds-modal-js';
 ```
 ```
-@import 'ds-modal-js/dist/ds-modal.min.css'
+@import 'ds-modal-js/src/ds-modal.scss';
 ```
 
 
