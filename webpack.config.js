@@ -151,6 +151,10 @@ const commonPack = merge([
         {
           from: "README.md",
           to: `${PATHS.pack}`
+        },
+        {
+          from: "package-index.js",
+          to: `${PATHS.pack}/index.js`
         }
       ])
     ]
