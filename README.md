@@ -5,6 +5,13 @@ ds-modal-js - lightweight and easy to use javascript modal window
 ### Demo
 https://shkredovdmitriy.github.io/ds-modal-js/
 
+### Advantages
+- Easy to use
+- Small size (less than 5kb min+gzip) </br>
+- Closing modal on overlay click </br>
+- Using data attributes
+
+
 ### Without installation
 
 Add this line to head
