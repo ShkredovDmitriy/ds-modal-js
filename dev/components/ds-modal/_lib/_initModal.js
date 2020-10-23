@@ -1,6 +1,6 @@
-import config from './_config';
-import { message, warning } from './_log';
-import DsModal from './_DsModal';
+import config from "./_config";
+import { warning } from "./_log";
+import DsModal from "./_DsModal";
 
 const initModal = () => {
   if (config.initialised === false) {
@@ -10,9 +10,8 @@ const initModal = () => {
       clone.init();
       config.modals.push(clone);
     });
-    message('ds-modal initialized', true);
   } else {
-    warning('ds-modal has already been initialized earlier', true);
+    warning("ds-modal has already been initialized earlier", true);
   }
 };
 
