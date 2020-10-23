@@ -62,6 +62,17 @@ dsModal.open("example-modal");
 dsModal.close("example-modal");
 ```
 
+### API
+```
+dsModal.status();
+```
+```
+dsModal.config({"logs": false}); 
+```
+```
+dsModal.config({"outClick": false});
+```
+
 ### History
 
 ### License
