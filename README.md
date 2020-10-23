@@ -7,6 +7,7 @@ https://shkredovdmitriy.github.io/ds-modal-js/
 
 ### Advantages
 - Easy to use
+- Has no dependencies
 - Small size (less than 5kb min+gzip) </br>
 - Closing modal on overlay click </br>
 - Using data attributes
