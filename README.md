@@ -50,6 +50,8 @@ Specify data-ds-modal-open on the button and data-ds-modal on the modal window, 
 ## Use in manual mode
 ```
 dsModal.open("example-modal");
+```
+```
 dsModal.close("example-modal");
 ```
 
