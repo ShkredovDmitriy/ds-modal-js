@@ -1,8 +1,9 @@
-import config from './_config';
-import modalOpen from './_modalOpen';
-import modalClose from './_modalClose';
-import allButtons from './_allButtons';
-import outClickClose from './_outClickClose';
+import config from "./_config";
+import modalOpen from "./_modalOpen";
+import modalClose from "./_modalClose";
+import modalVibration from "./_modalVibration";
+import allButtons from "./_allButtons";
+import outClickClose from "./_outClickClose";
 
 class DsModal {
   constructor(dataValue) {
@@ -27,6 +28,10 @@ class DsModal {
 
   close() {
     modalClose(this.dataValue);
+  }
+
+  vibration() {
+    modalVibration(this.dataValue);
   }
 
   status() {

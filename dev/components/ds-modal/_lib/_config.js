@@ -7,11 +7,11 @@ const config = {
   modalClass: ".ds-modal", // modal class
   openData: "data-ds-modal-open", // open button data attribute
   buttonClose: ".ds-modal-close", // close buttons class
-  animationStep1: "block", // animation step 1 (! need hide)
-  animationStep2: "shadow", // animation step 2 (! need hide)
-  animationStep3: "opacity", // animation step 3 (! need hide)
-  animationStep4: "transform", // animation step 4 (! need hide)
-  // variable parameters
+  animationStep1: "block", // animation step 1 class
+  animationStep2: "shadow", // animation step 2 class
+  animationStep3: "opacity", // animation step 3 class
+  animationStep4: "transform", // animation step 4 class
+  vibration: "vibration", // vibration class
   modals: [], // all inited modals
   logs: false, // show logs in terminal
   initialised: false, // initialised indicator

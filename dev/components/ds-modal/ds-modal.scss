@@ -37,6 +37,7 @@ $font-main-medium: Arial, serif;
   &.transform {
     .ds-modal {
       transform: scale(1);
+      transform: translate3d(0, 0, 0);
     }
   }
 
@@ -64,6 +65,7 @@ $font-main-medium: Arial, serif;
   padding-top: 2.75rem;
   opacity: 0;
   transform: scale(0.5);
+  transform: translate3d(0, 2rem, 0);
   transform-origin: center;
   background-color: $color-white;
   transition: transform 200ms, opacity 180ms;
@@ -73,9 +75,9 @@ $font-main-medium: Arial, serif;
   position: absolute;
   top: 1rem;
   right: 1rem;
-  width: 1.25rem;
-  height: 1.25rem;
-  background: url('data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve"><g id="close"><polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5"/></g></svg>');
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url('data:image/svg+xml;utf8,<svg id="Outlined" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g id="Fill"><polygon points="28.71 4.71 27.29 3.29 16 14.59 4.71 3.29 3.29 4.71 14.59 16 3.29 27.29 4.71 28.71 16 17.41 27.29 28.71 28.71 27.29 17.41 16 28.71 4.71"/></g></svg>');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0 0;

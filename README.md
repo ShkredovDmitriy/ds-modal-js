@@ -17,11 +17,11 @@ https://shkredovdmitriy.github.io/ds-modal-js/
 
 Add this line to head
 ```
-<link href="https://unpkg.com/ds-modal-js@0.1.22/dist/ds-modal.min.css" rel="stylesheet">
+<link href="https://unpkg.com/ds-modal-js@0.1.23/dist/ds-modal.min.css" rel="stylesheet">
 ```
 Add this line to the bottom of the body
 ```
-<script src="https://unpkg.com/ds-modal-js@0.1.22/dist/ds-modal.min.js"></script>
+<script src="https://unpkg.com/ds-modal-js@0.1.23/dist/ds-modal.min.js"></script>
 ```
 
 ### Installation
@@ -68,10 +68,10 @@ dsModal.close("example-modal");
 dsModal.status();
 ```
 ```
-dsModal.config({"logs": false}); 
+dsModal.config({"logs": false});      // show logs in console (true/false, default false)
 ```
 ```
-dsModal.config({"outClick": false});
+dsModal.config({"outClick": true});   // close modal on overlay click (true/false, default true)
 ```
 
 ### History
