@@ -1,22 +1,13 @@
-@import "./mixins.scss";
-
-@import "./fonts.scss";
-
 @import "./vars.scss";
 
 @import "./reset.scss";
 
 // blocks
-@import "../../blocks/main-header/main-header.scss";
+@import "../../blocks/demo-header/demo-header.scss";
 
-@import "../../blocks/main-content/main-content.scss";
+@import "../../blocks/demo-content/demo-content.scss";
 
-@import "../../blocks/main-footer/main-footer.scss";
+@import "../../blocks/demo-footer/demo-footer.scss";
 
 // components
 @import "../../components/ds-modal/ds-modal.scss";
-
-@import "../../components/container/container.scss";
-
-// elements
-@import "../../elements/button/button.scss";

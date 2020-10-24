@@ -82,6 +82,26 @@ $font-main-medium: Arial, serif;
   cursor: pointer;
 }
 
+.ds-modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5625rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 0.5625rem;
+  background-color: $color-white;
+  border-radius: 0;
+  border: 1px solid $color-black-light;
+  border-radius: 0.25rem;
+  font-size: 1.125rem;
+  line-height: 1;
+  font-family: $font-main-regular;
+  color: $color-black-light;
+  text-align: center;
+  cursor: pointer;
+}
+
 .ds-modal-header {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
@@ -104,6 +124,9 @@ $font-main-medium: Arial, serif;
 
 .ds-modal-footer {
   margin-top: 0.5rem;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
 
 @import "./_animations/vibration.scss";
