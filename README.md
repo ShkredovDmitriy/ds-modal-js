@@ -1,4 +1,6 @@
 ## ds-modal-js
+<img src="https://badgen.net/npm/v/ds-modal-js"/><img src="https://badgen.net/npm/dw/ds-modal-js"/></br>
+
 ds-modal-js - lightweight and easy to use javascript modal window
 
 
