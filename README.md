@@ -44,13 +44,13 @@ import dsModal from 'ds-modal-js';
 <div class="ds-modal-container" data-ds-modal="example-modal">
   <div class="ds-modal-wrapper">
     <div class="ds-modal">
-      <div class="ds-modal-close"></div>
+      <div class="ds-modal-close" data-ds-modal-close="example-modal"></div>
       <div class="ds-modal-header">Example</div>
       <div class="ds-modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
       <div class="ds-modal-footer"></div>
     </div>
   </div>
-</div>
+</div>     
 ```
 ### Use in automatic mode
 Specify data-ds-modal-open on the button and data-ds-modal on the modal window, for example "example-modal". This is enough to work.
