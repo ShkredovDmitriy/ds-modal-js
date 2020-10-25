@@ -1,5 +1,6 @@
 import config from "./_config";
 import { message } from "./_log";
+import zIndexSet from "./_zIndexSet";
 
 const configSet = data => {
   if (data) {
@@ -18,6 +19,9 @@ const configSet = data => {
     if (data.outClick === false) {
       config.outClick = false;
       message("ds-modal: outClick = false", true);
+    }
+    if (data.zIndex) {
+      zIndexSet(data.zIndex);
     }
   }
 };

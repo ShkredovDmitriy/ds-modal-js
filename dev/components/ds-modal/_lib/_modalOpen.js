@@ -1,9 +1,10 @@
-import config from './_config';
-import classAdd from './_classAdd';
-import { message } from './_log';
+import config from "./_config";
+import classAdd from "./_classAdd";
+import { message } from "./_log";
 
 const modalOpen = dataValue => {
   const modal = config.modalSelector(dataValue);
+  document.querySelector(modal).style.zIndex = config.zIndex;
   classAdd(modal, config.animationStep1, 0);
   classAdd(modal, config.animationStep2, 50);
   classAdd(modal, config.animationStep3, 200);

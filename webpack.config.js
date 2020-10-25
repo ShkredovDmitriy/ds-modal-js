@@ -113,7 +113,8 @@ const commonProd = merge([
   pug(),
   images(),
   fonts(),
-  babel()
+  babel(),
+  favicon()
 ]);
 
 const commonPack = merge([

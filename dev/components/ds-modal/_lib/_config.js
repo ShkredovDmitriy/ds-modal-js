@@ -16,6 +16,7 @@ const config = {
   logs: false, // show logs in terminal
   initialised: false, // initialised indicator
   outClick: true, // close modal when click outside the modal
+  zIndex: 9999, // modal z-index
 
   modalSelector(dataValue) {
     return `.ds-modal-container[data-ds-modal="${dataValue}"]`;
