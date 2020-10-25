@@ -8,7 +8,8 @@
   },
   "keywords": [
     "modal",
-    "window"
+    "dialog",
+    "no jQuery"
   ],
   "author": {
     "name": "Dmitriy Shkredov",
