@@ -55,7 +55,7 @@ import dsModal from 'ds-modal-js';
 </div>     
 ```
 ### Use in automatic mode
-Specify data-ds-modal-open on the button and data-ds-modal on the modal window, for example "example-modal". This is enough to work.
+Specify data-ds-modal-open="example-modal" on the button and data-ds-modal="example-modal" on the modal. This is enough to work.
 
 ### Use in manual mode
 ```
