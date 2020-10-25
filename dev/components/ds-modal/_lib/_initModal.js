@@ -11,7 +11,7 @@ const initModal = () => {
       config.modals.push(clone);
     });
   } else {
-    warning("ds-modal has already been initialized earlier", true);
+    warning("ds-modal has already been initialized", true);
   }
 };
 
