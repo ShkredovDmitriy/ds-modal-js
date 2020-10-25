@@ -67,13 +67,16 @@ dsModal.close("example-modal");
 
 ### API
 ```
-dsModal.status();
+dsModal.status();                     // show status
 ```
 ```
 dsModal.config({"logs": false});      // show logs in console (true/false, default false)
 ```
 ```
 dsModal.config({"outClick": true});   // close modal on overlay click (true/false, default true)
+```
+```
+dsModal.config({"zIndex": 9999});     // set modal z-index ( from 1 to 99999, default 9999)
 ```
 
 ### History
