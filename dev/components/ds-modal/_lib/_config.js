@@ -12,7 +12,7 @@ const config = {
   animationStep3: "opacity", // animation step 3 class
   animationStep4: "transform", // animation step 4 class
   vibration: "vibration", // vibration class
-  modals: [], // all inited modals
+  modals: new Map(), // all inited modals
   logs: false, // show logs in terminal
   initialised: false, // initialised indicator
   outClick: true, // close modal when click outside the modal

@@ -1,9 +1,12 @@
-import config from './_config';
+import config from "./_config";
+import { error } from "./_log";
 
 export default function controlClose(dataValue) {
   if (dataValue) {
-    config.modals.forEach(modal => {
-      modal.status() === dataValue ? modal.close() : false;
-    });
+    if (config.modals.has(dataValue)) {
+      config.modals.get(dataValue).close();
+    } else {
+      error("ds-modal: no such modal exists", true);
+    }
   }
 }

@@ -2,7 +2,7 @@ import config from "./_config";
 import { message } from "./_log";
 import zIndexSet from "./_zIndexSet";
 
-const configSet = data => {
+export default function configSet(data) {
   if (data) {
     if (data.logs === true) {
       config.logs = true;
@@ -24,6 +24,4 @@ const configSet = data => {
       zIndexSet(data.zIndex);
     }
   }
-};
-
-export default configSet;
+}

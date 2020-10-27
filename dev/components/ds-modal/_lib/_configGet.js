@@ -3,8 +3,8 @@ import { message } from "./_log";
 
 const configGet = () => {
   message("ds-modal status:", true);
-  config.modals.forEach(modal => {
-    message(`${modal.status()} is ready to work`, true); // show all modals
+  config.modals.forEach((modal, key) => {
+    message(`modal ${key} is ready to work`, true); // show all modals
   });
   message(`logs: ${config.logs}`, true);
   message(`outClick: ${config.outClick}`, true);

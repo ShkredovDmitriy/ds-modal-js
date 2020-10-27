@@ -6,13 +6,15 @@ export default function outClickClose(dataValue) {
   );
   wrapper.addEventListener("click", e => {
     if (e.target === wrapper) {
-      config.modals.forEach(modal => {
+      if (config.modals.has(dataValue)) {
         if (config.outClick === true) {
-          modal.status() === dataValue ? modal.close() : false;
+          config.modals.get(dataValue).close();
         } else {
-          modal.status() === dataValue ? modal.vibration() : false;
+          config.modals.get(dataValue).vibration();
         }
-      });
+      } else {
+        error("ds-modal: no such modal exists", true);
+      }
     }
   });
 }

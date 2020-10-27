@@ -1,9 +1,7 @@
-import config from './_config';
-import { message } from './_log';
+import config from "./_config";
+import { message } from "./_log";
 
-const destroyModal = () => {
+export default function destroyModal() {
   // function comming soon
-  message('dsModal destroyed', true);
-};
-
-export default destroyModal;
+  message("ds-modal destroyed", true);
+}
