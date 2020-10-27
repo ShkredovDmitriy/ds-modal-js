@@ -8,11 +8,9 @@ export default function zIndexSet(data) {
       config.zIndex = zIndex;
       message(`ds-modal: zIndex = ${zIndex}`, config.logs);
     } else {
-      error(`ds-modal: zIndex = not changed`, config.logs);
-      error(`please set zIndex from 1 to 99999`, config.logs);
+      error(`ds-modal: please set zIndex from 1 to 99999`, true);
     }
   } else {
-    error(`ds-modal: zIndex = not changed`, config.logs);
-    error(`please set zIndex from 1 to 99999`, config.logs);
+    error(`ds-modal: please set zIndex from 1 to 99999`, true);
   }
 }
