@@ -1,0 +1,24 @@
+{
+  "name": "ds-modal-js",
+  "version": "0.2.10",
+  "description": "ds-modal-js - lightweight and easy to use javascript modal dialog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShkredovDmitriy/ds-modal-js.git"
+  },
+  "keywords": [
+    "modal",
+    "dialog",
+    "no jQuery"
+  ],
+  "author": {
+    "name": "Dmitriy Shkredov",
+    "email": "ShkredovDmitriy@gmail.com",
+    "url": "https://github.com/ShkredovDmitriy/ds-modal-js"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShkredovDmitriy/ds-modal-js/issues"
+  },
+  "homepage": "https://github.com/ShkredovDmitriy/ds-modal-js#readme"
+}
