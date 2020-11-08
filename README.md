@@ -82,6 +82,7 @@ dsModal.config({"zIndex": 9999});     // set modal z-index ( from 1 to 99999, de
 ```
 
 ### History
+v.0.2.10 - rewrite on ts
 
 ### License
 MIT License
