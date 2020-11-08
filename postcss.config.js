@@ -1,7 +1,7 @@
-const postCSSConfig = {
-  ident: 'postcss',
-  // <= this line
-  plugins() {
-    return [autoprefixer({ browsers: ['last 2 versions'] })];
+module.exports = {
+  plugins: {
+      'postcss-preset-env': {
+          browsers: 'last 10 versions',
+      },
   },
-};
+}
