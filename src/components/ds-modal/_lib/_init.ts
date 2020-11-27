@@ -1,6 +1,6 @@
 import config from "./_config";
 import addBg from "./_addBg";
-import DsModal from "./_DsModal";
+import DsModal from "./_DsModalComponent";
 import controlOpen from "./_controlOpen";
 import controlClose from "./_controlClose";
 import outClickClose from "./_outClickClose";

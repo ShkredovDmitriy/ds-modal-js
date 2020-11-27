@@ -1,0 +1,25 @@
+.ds-modal__opacity-in {
+	animation-name: ds-modal__opacity-in;
+  animation-iteration-count: 1;
+	animation-duration: 250ms;	
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ds-modal__opacity-in {
+	0% {
+		opacity: 0.0;		
+	}
+	100% {
+		opacity: 1;
+	}		
+}
+
+@-webkit-keyframes ds-modal__opacity-in {
+	0% {
+		opacity: 0.0;		
+	}
+	100% {
+		opacity: 1;	
+	}		
+}
