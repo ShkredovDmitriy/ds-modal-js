@@ -1,11 +1,23 @@
 import config from "./_config";
-import classAdd from "./_classAdd";
-import classRemove from "./_classRemove";
+import modalComponentAnimation from "./_modalComponentAnimation";
 import { message } from "./_log";
 
-export default function modalBackgroundOpen() {
-  classAdd(config.backgroundClass, config.backgroundBlockClass, 0);
-  classAdd(config.backgroundClass, config.backgroundInClass, 0);
-  classRemove(config.backgroundClass, config.backgroundInClass, 400);
-  message(`ds-modal: background opened`, config.logs);
+async function addInlineStylesToModalBackground(backgroundClass:string) {
+  const background:HTMLElement = document.querySelector(backgroundClass);
+  background.style.zIndex = config.zIndex + "";
+  background.classList.add(config.containerBlockClass);
+}
+
+async function showLogWhenAnimationEnd(dataValue:string) {
+  message(`ds-modal: ${dataValue} opened`, config.logs);
+}
+
+export default async function modalBackgroundOpen() {
+  try {
+    await addInlineStylesToModalBackground(config.backgroundClass);
+    await modalComponentAnimation(config.backgroundClass, config.backgroundInClass);
+    await showLogWhenAnimationEnd("background");
+  } catch (e) {
+    console.log(e);
+  }
 }

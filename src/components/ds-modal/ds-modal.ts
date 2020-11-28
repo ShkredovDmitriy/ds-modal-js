@@ -1,29 +1,29 @@
-import init from "./_lib/_init";
-import controlOpen from "./_lib/_controlOpen";
-import controlClose from "./_lib/_controlClose";
-import configSet from "./_lib/_configSet";
-import configGet from "./_lib/_configGet";
+import modalApiInit from "./_lib/_modalApiInit";
+import modalApiOpen from "./_lib/_modalApiOpen";
+import modalApiClose from "./_lib/_modalApiClose";
+import modalApiSetConfig from "./_lib/_modalApiSetConfig";
+import modalApiGetStatus from "./_lib/_modalApiGetStatus";
 
 class DsModalComponent {
 
   init() {
-    init();
+    modalApiInit();
   }
 
   config(data:object) {
-    configSet(data);
+    modalApiSetConfig(data);
   }
 
   open(dataValue: string) {
-    controlOpen(dataValue);
+    modalApiOpen(dataValue);
   }
 
   close(dataValue: string) {
-    controlClose(dataValue);
+    modalApiClose(dataValue);
   }
 
   status() {
-    configGet();
+    modalApiGetStatus();
   }
 }
 

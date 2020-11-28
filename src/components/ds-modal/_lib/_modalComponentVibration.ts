@@ -1,11 +1,17 @@
 import config from "./_config";
-import classAdd from "./_classAdd";
-import classRemove from "./_classRemove";
+import modalComponentAnimation from "./_modalComponentAnimation";
 import { message } from "./_log";
 
-export default function modalComponentVibration(dataValue:string) {
+async function showLogWhenAnimationEnd(dataValue:string) {
+  message(`ds-modal: ${dataValue} opened`, config.logs);
+}
+
+export default async function modalComponentVibration(dataValue:string) {
   const modalSelector = `.ds-modal__container[data-ds-modal="${dataValue}"] ${config.modalClass}`;
-  classAdd(modalSelector, config.modalVibration, 50);
-  classRemove(modalSelector, config.modalVibration, 500);
-  message(`ds-modal: ${dataValue} vibration`, config.logs);
+  try {
+    await modalComponentAnimation(modalSelector, config.modalVibration);
+    await showLogWhenAnimationEnd(dataValue);
+  } catch (e) {
+    console.log(e);
+  }
 }

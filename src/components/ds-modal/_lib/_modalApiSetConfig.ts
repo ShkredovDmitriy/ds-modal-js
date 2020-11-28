@@ -1,6 +1,6 @@
 import config from "./_config";
 import { message } from "./_log";
-import zIndexSet from "./_zIndexSet";
+import modalChangeZindex from "./_modalChangeZindex";
 
 export default function configSet({...data}) {
     if (data.logs === true) {
@@ -20,7 +20,7 @@ export default function configSet({...data}) {
       message("ds-modal: outClick = false", config.logs);
     }
     if (data.zIndex) {
-      zIndexSet(data.zIndex);
+      modalChangeZindex(data.zIndex);
     }
    
 }

@@ -23,7 +23,7 @@ const config = {
   initialised: false, // initialised indicator
   logs: false, // show logs in terminal
   outClick: true, // close modal when click outside the modal
-  zIndex: 9999, // modal z-index
+  zIndex: 9998, // modal z-index
 };
 
 export default config;

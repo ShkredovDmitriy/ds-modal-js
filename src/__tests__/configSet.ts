@@ -1,47 +1,47 @@
 import config from "../components/ds-modal/_lib/_config";
-import configSet from "../components/ds-modal/_lib/_configSet";
+import modalApiSetConfig from "../components/ds-modal/_lib/_modalApiSetConfig";
 
   test('set logs = true', () => {
-    configSet({logs: true})
+    modalApiSetConfig({logs: true})
     expect(config.logs).toBe(true);
   });
   
   test('set logs = false ', function() {
-    configSet({logs: false})
+    modalApiSetConfig({logs: false})
     expect(config.logs).toBe(false);
   });
 
   test('set logs = wrong value ', function() {
-    configSet({logs: "wrong"})
+    modalApiSetConfig({logs: "wrong"})
     expect(config.logs).toBe(false);
   });
 
   test('set outClick = true ', function() {
-    configSet({outClick: true})
+    modalApiSetConfig({outClick: true})
     expect(config.outClick).toBe(true);
   });
 
   test('set outClick = false ', function() {
-    configSet({outClick: false})
+    modalApiSetConfig({outClick: false})
     expect(config.outClick).toBe(false);
   });
 
   test('set outClick = wrong value ', function() {
-    configSet({outClick: "wrong"})
+    modalApiSetConfig({outClick: "wrong"})
     expect(config.outClick).toBe(false);
   });
 
   test('set zIndex = 100 ', function() {
-    configSet({zIndex: 100})
+    modalApiSetConfig({zIndex: 100})
     expect(config.zIndex).toBe(100);
   });
 
   test('set zIndex = 999999 ', function() {
-    configSet({zIndex: 999999})
+    modalApiSetConfig({zIndex: 999999})
     expect(config.zIndex).toBe(100);
   });
 
   test('set zIndex = wrong value ', function() {
-    configSet({zIndex: "wrong"})
+    modalApiSetConfig({zIndex: "wrong"})
     expect(config.zIndex).toBe(100);
   });

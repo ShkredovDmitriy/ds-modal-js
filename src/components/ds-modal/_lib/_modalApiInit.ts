@@ -1,8 +1,8 @@
 import config from "./_config";
 import modalBackgroundAppend from "./_modalBackgroundAppend";
 import DsModal from "./_DsModalComponent";
-import controlOpen from "./_controlOpen";
-import controlClose from "./_controlClose";
+import modalApiOpen from "./_modalApiOpen";
+import modalApiClose from "./_modalApiClose";
 import modalCloseIfClickOut from "./_modalCloseIfClickOut";
 
 function userEvent(event: any) {
@@ -11,9 +11,9 @@ function userEvent(event: any) {
     const closeData: string = event.target.getAttribute('data-ds-modal-close');
     const modalData: any = event.target.classList.contains('ds-modal__wrapper')? event.target.parentElement.getAttribute('data-ds-modal') : false;
     if(openData){
-      controlOpen(openData);
+      modalApiOpen(openData);
     } else if(closeData){
-      controlClose(closeData);
+      modalApiClose(closeData);
     } else if(modalData) {
       const wrapper = document.querySelector(`.ds-modal__container[data-ds-modal="${modalData}"] .ds-modal__wrapper`);
       if (event.target === wrapper) {
@@ -23,7 +23,7 @@ function userEvent(event: any) {
   }
 }
 
-export default function init() {
+export default function modalApiInit() {
   document.addEventListener('click', function(event: any) {
     userEvent(event);
   });
