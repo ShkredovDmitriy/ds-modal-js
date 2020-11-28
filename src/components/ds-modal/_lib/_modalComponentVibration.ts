@@ -4,8 +4,8 @@ import classRemove from "./_classRemove";
 import { message } from "./_log";
 
 export default function modalComponentVibration(dataValue:string) {
-  const modalSelector:string = `.ds-modal-container[data-ds-modal="${dataValue}"]`;
-  classAdd(modalSelector, config.vibration, 50);
-  classRemove(modalSelector, config.vibration, 500);
+  const modalSelector = `.ds-modal-container[data-ds-modal="${dataValue}"] ${config.modalClass}`;
+  classAdd(modalSelector, config.modalVibration, 50);
+  classRemove(modalSelector, config.modalVibration, 500);
   message(`ds-modal: ${dataValue} vibration`, config.logs);
 }
