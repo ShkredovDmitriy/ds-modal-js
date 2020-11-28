@@ -1,4 +1,4 @@
-.ds-modal-container {
+.ds-modal__container {
   display: none;
   position: fixed;
   top: 0;
@@ -11,11 +11,11 @@
   overflow-y: auto;
 }
 
-.ds-modal-container-block {
+.ds-modal__container-block {
   display: block;
 }
 
-.ds-modal-wrapper {
+.ds-modal__wrapper {
   width: 100vw;
   min-height: 100%;
   display: flex;

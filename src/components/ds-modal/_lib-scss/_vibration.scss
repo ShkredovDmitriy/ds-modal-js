@@ -1,13 +1,11 @@
-.ds-modal-vibration {
+.ds-modal__vibration {
   animation-name: ds-modal-anim-vibration;
   animation-iteration-count: 1;
 	animation-duration: 300ms;	
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  perspective: 1000px;
+  perspective: 500px;
   backface-visibility: hidden;
-  transform: scale(1);
-  opacity: 1;
 }
 
 @keyframes ds-modal-anim-vibration {

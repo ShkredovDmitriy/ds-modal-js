@@ -1,4 +1,4 @@
-.ds-modal-demo-content {
+.ds-modal__demo-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,7 @@
   height: 100vh;
   background-color: $color-white;
 
-  > .ds-modal-button {
+  > .ds-modal__button {
     margin: 0.25rem;
   }
 }
