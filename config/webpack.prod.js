@@ -1,12 +1,14 @@
 const paths = require('./_lib/paths');
 const { merge } = require('webpack-merge');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 
-const commonConfig = merge([
+const clearBuildFolder = require('./_lib/clearBuildFolder');
+const typescriptLoader = require('./_lib/typescriptLoader');
+
+const productionPoints = merge([
   {
     // Set the mode to development or production
     mode: 'production',
@@ -22,29 +24,7 @@ const commonConfig = merge([
   }
 ]);
 
-// Clean output folder
-const clearBuildFolder = merge([
-  {
-    plugins: [
-      new CleanWebpackPlugin(),
-    ],
-  }
-]);
 
-// Typescript loader
-const typescriptLoader = merge([
-  {
-    module: {
-      rules: [
-        {
-          test: /\.ts$/,
-          exclude: [/node_modules/, /config/],
-          use: 'ts-loader',
-        },
-      ],
-    },
-  }
-]);
 
 // Transform pug to html
 const exportHTMLfiles = merge([
@@ -175,11 +155,11 @@ const copyFilesToPackage = merge([
         patterns: [
           {
             from: 'docs/css/',
-            to: '../pack/dsModal.min.css',
+            to: '../pack/dist/dsModal.min.css',
           },
           {
             from: 'docs/js/',
-            to: '../pack/dsModal.min.js',
+            to: '../pack/dist/dsModal.min.js',
           },
           {
             from: 'package-pack.json',
@@ -197,9 +177,9 @@ const copyFilesToPackage = merge([
 
 module.exports = env => {
   return merge([
-    commonConfig, 
-    clearBuildFolder,
-    typescriptLoader,
+    productionPoints, 
+    clearBuildFolder(),
+    typescriptLoader(),
     exportHTMLfiles,
     copyStaticFiles,
     exportCssToMainMinCss,
