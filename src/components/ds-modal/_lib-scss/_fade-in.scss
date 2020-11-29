@@ -19,17 +19,3 @@
 		opacity: 1;
 	}		
 }
-
-@-webkit-keyframes ds-modal__fade-in {
-	0% {
-		-webkit-transform: scale(0.7);
-		opacity: 0.0;		
-	}
-	75% {
-		transform: scale(1);
-	}
-	100% {
-		-webkit-transform: scale(1);
-		opacity: 1;	
-	}		
-}
