@@ -1,1 +1,1 @@
-module.exports = require("./dist/dsModal.min.js");
+module.exports = require("./dist/ds-modal.min.js");
