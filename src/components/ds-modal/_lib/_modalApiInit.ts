@@ -1,5 +1,6 @@
 import config from "./_config";
 import modalBackgroundAppend from "./_modalBackgroundAppend";
+import { modalWrapperSelector} from "./_modalShortSelectors";
 import DsModal from "./_DsModalComponent";
 import modalApiOpen from "./_modalApiOpen";
 import modalApiClose from "./_modalApiClose";
@@ -15,7 +16,7 @@ function userEvent(event: any) {
     } else if(closeData){
       modalApiClose(closeData);
     } else if(modalData) {
-      const wrapper = document.querySelector(`.ds-modal__container[data-ds-modal="${modalData}"] .ds-modal__wrapper`);
+      const wrapper = document.querySelector(modalWrapperSelector(modalData));
       if (event.target === wrapper) {
         modalCloseIfClickOut(modalData);
       }

@@ -8,7 +8,7 @@ async function addInlineStylesToModalBackground(backgroundClass:string) {
 }
 
 async function showLogWhenAnimationEnd(dataValue:string) {
-  message(`ds-modal: ${dataValue} opened`, config.logs);
+  message(`${config.logComponent}: ${dataValue} opened`, config.logs);
 }
 
 export default async function modalBackgroundOpen() {

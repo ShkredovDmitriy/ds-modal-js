@@ -9,5 +9,5 @@ import config from "../components/ds-modal/_lib/_config";
   });
 
   test('zindex: 9999', () => {
-    expect(config.zIndex).toBe(9999);
+    expect(config.zIndex).toBe(9998);
   });

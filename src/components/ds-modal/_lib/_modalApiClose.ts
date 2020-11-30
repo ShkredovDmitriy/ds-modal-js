@@ -6,7 +6,7 @@ export default function modalApiClose(dataValue: string) {
     if (config.modals.has(dataValue)) {
       config.modals.get(dataValue).close();
     } else {
-      error("ds-modal: no such modal exists", true);
+      error(`${config.logComponent}: no such modal exists`, true);
     }
   }
 }

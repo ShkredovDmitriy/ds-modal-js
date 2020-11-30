@@ -5,19 +5,19 @@ import modalChangeZindex from "./_modalChangeZindex";
 export default function configSet({...data}) {
     if (data.logs === true) {
       config.logs = true;
-      message("ds-modal: logs = true", config.logs);
+      message(`${config.logComponent}: logs = true`, config.logs);
     }
     if (data.logs === false) {
       config.logs = false;
-      message("ds-modal: logs = false", config.logs);
+      message(`${config.logComponent}: logs = false`, config.logs);
     }      
     if (data.outClick === true) {
       config.outClick = true;
-      message("ds-modal: outClick = true", config.logs);
+      message(`${config.logComponent}: outClick = true`, config.logs);
     }
     if (data.outClick === false) {
       config.outClick = false;
-      message("ds-modal: outClick = false", config.logs);
+      message(`${config.logComponent}: outClick = false`, config.logs);
     }
     if (data.zIndex) {
       modalChangeZindex(data.zIndex);

@@ -4,7 +4,7 @@ import { message } from "./_log";
 export default function modalApiGetStatus() {
   message("ds-modal status:", true);
   config.modals.forEach((modal, key) => {
-    message(`modal ${key} is ready to work`, true); // show all modals
+    message(`${config.logComponent} ${key} is ready to work`, true); // show all modals
   });
   message(`logs: ${config.logs}`, true);
   message(`outClick: ${config.outClick}`, true);
