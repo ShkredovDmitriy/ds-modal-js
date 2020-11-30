@@ -1,11 +1,10 @@
 import config from "./_config";
 import modalComponentAnimation from "./_modalComponentAnimation";
-import { modalContainerSelector, modalSelector} from "./_modalShortSelectors";
+import { modalContainerSelector, modalSelector, singleSelector } from "./_modalShortSelectors";
 import { message } from "./_log";
 
 async function addInlineStylesToModalContainer(modalContainerSelector:string) {
-  const modalContainer:HTMLElement = document.querySelector(modalContainerSelector);
-  modalContainer.classList.remove(config.containerBlockClass);
+  singleSelector(modalContainerSelector).classList.remove(config.containerBlockClass);
 }
 
 async function showLogWhenAnimationEnd(dataValue:string) {

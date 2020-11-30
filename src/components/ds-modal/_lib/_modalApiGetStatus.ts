@@ -2,7 +2,7 @@ import config from "./_config";
 import { message } from "./_log";
 
 export default function modalApiGetStatus() {
-  message("ds-modal status:", true);
+  message(`${config.logComponent} status:`, true);
   config.modals.forEach((modal, key) => {
     message(`${config.logComponent} ${key} is ready to work`, true); // show all modals
   });

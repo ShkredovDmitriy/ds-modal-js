@@ -1,7 +1,8 @@
 const config = {
   modalQuery: ".ds-modal__container[data-ds-modal]", // modal container selector
   modalData: "data-ds-modal", // modal data attribute
-  openData: "data-ds-modal-open", // open button data attribute
+  dataAttrOpen: "data-ds-modal-open", // open button data attribute
+  dataAttrClose: "data-ds-modal-close", // close button data attribute
     // modal
   backgroundBlock: "ds-modal__background",
   backgroundClass: ".ds-modal__background",
@@ -21,6 +22,7 @@ const config = {
   modalVibration: "ds-modal__vibration",
   // logs text
   logComponent: "ds-modal",
+  logNoModal: "no such modal exists",
 
   // setable variables
   modals: new Map(), // all initialized modals

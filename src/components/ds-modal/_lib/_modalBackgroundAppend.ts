@@ -1,7 +1,8 @@
 import config from "./_config";
+import { singleSelector } from "./_modalShortSelectors";
 
 export default function modalBackgroundAppend(){
   let dsModalBg = document.createElement("div");
   dsModalBg.classList.add(config.backgroundBlock);
-  document.querySelector('body').appendChild(dsModalBg);
+  singleSelector('body').appendChild(dsModalBg);
 }

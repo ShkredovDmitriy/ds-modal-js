@@ -1,11 +1,11 @@
 import config from "./_config";
 import modalComponentAnimation from "./_modalComponentAnimation";
+import { singleSelector } from "./_modalShortSelectors";
 import { message } from "./_log";
 
 async function addInlineStylesToModalBackground(backgroundClass:string) {
-  const background:HTMLElement = document.querySelector(backgroundClass);
-  background.style.zIndex = config.zIndex + "";
-  background.classList.add(config.containerBlockClass);
+  singleSelector(backgroundClass).style.zIndex = config.zIndex + "";
+  singleSelector(backgroundClass).classList.add(config.containerBlockClass);
 }
 
 async function showLogWhenAnimationEnd(dataValue:string) {

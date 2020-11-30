@@ -24,8 +24,6 @@ const productionPoints = merge([
   }
 ]);
 
-
-
 // Transform pug to html
 const exportHTMLfiles = merge([
   {
@@ -147,7 +145,7 @@ const resolveTypescript = merge([
   }
 ]);
 
-// copy files to package
+// copy files to pack
 const copyFilesToPackage = merge([
   {
     plugins: [

@@ -1,15 +1,19 @@
 import config from "./_config";
 
-function modalContainerSelector(dataValue:string) {
+function modalContainerSelector(dataValue:string):string {
   return `${config.modalContainer}[${config.modalData}="${dataValue}"]`;
 }
 
-function modalWrapperSelector(dataValue:string) {
+function modalWrapperSelector(dataValue:string):string {
   return `${config.modalContainer}[${config.modalData}="${dataValue}"] ${config.modalWrapper}`;
 }
 
-function modalSelector(dataValue:string) {
+function modalSelector(dataValue:string):string {
   return `${config.modalContainer}[${config.modalData}="${dataValue}"] ${config.modalClass}`;
 }
 
-export { modalContainerSelector, modalWrapperSelector, modalSelector }
+function singleSelector(selector:string):HTMLElement {
+  return document.querySelector(selector);
+}
+
+export { modalContainerSelector, modalWrapperSelector, modalSelector, singleSelector }
