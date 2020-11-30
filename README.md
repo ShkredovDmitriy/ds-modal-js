@@ -21,11 +21,11 @@ https://codepen.io/shkredovdmitriy/pen/MWepKGv
 
 Add this line to head
 ```
-<link href="https://unpkg.com/ds-modal-js@0.2.10/dist/ds-modal.min.css" rel="stylesheet">
+<link href="https://unpkg.com/ds-modal-js@0.2.20/dist/ds-modal.min.css" rel="stylesheet">
 ```
 Add this line to the bottom of the body
 ```
-<script src="https://unpkg.com/ds-modal-js@0.2.10/dist/ds-modal.min.js"></script>
+<script src="https://unpkg.com/ds-modal-js@0.2.20/dist/ds-modal.min.js"></script>
 ```
 
 ### Installation
@@ -45,13 +45,13 @@ import dsModal from 'ds-modal-js';
 </button>
 ```
 ```
-<div class="ds-modal-container" data-ds-modal="example-modal">
-  <div class="ds-modal-wrapper">
+<div class="ds-modal__container" data-ds-modal="example-modal">
+  <div class="ds-modal__wrapper">
     <div class="ds-modal">
-      <div class="ds-modal-close" data-ds-modal-close="example-modal"></div>
-      <div class="ds-modal-header">Example</div>
-      <div class="ds-modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div class="ds-modal-footer"></div>
+      <div class="ds-modal__close-button" data-ds-modal-close="example-modal"></div>
+      <div class="ds-modal__header">Example</div>
+      <div class="ds-modal__body">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="ds-modal__footer"></div>
     </div>
   </div>
 </div>     
@@ -82,7 +82,8 @@ dsModal.config({"zIndex": 9999});     // set modal z-index ( from 1 to 99999, de
 ```
 
 ### History
-v.0.2.10 - rewrote in ts
+v.0.2.20 - rewrote using promises
+v.0.2.10 - rewrote using typescript
 
 ### License
 MIT License
