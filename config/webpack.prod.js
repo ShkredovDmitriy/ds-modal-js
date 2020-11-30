@@ -153,11 +153,11 @@ const copyFilesToPackage = merge([
         patterns: [
           {
             from: 'docs/css/',
-            to: '../pack/dist/dsModal.min.css',
+            to: '../pack/dist/ds-modal.min.css',
           },
           {
             from: 'docs/js/',
-            to: '../pack/dist/dsModal.min.js',
+            to: '../pack/dist/ds-modal.min.js',
           },
           {
             from: 'package-pack.json',
@@ -166,6 +166,10 @@ const copyFilesToPackage = merge([
           {
             from: 'README.md',
             to: '../pack/README.md',
+          },
+          {
+            from: 'index.js',
+            to: '../pack/index.js',
           },
         ],
       }),
