@@ -83,7 +83,7 @@ dsModal.config({"zIndex": 9999});     // set modal z-index ( from 1 to 99999, de
 
 ### History
 ```
-v.0.2.30 - add зфввштп instead of scrollbar
+v.0.2.30 - add padding instead of scrollbar
 ```
 ```
 v.0.2.20 - use promises
