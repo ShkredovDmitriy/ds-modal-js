@@ -21,11 +21,11 @@ https://codepen.io/shkredovdmitriy/pen/MWepKGv
 
 Add this line to head
 ```
-<link href="https://unpkg.com/ds-modal-js@0.2.22/dist/ds-modal.min.css" rel="stylesheet">
+<link href="https://unpkg.com/ds-modal-js@0.2.30/dist/ds-modal.min.css" rel="stylesheet">
 ```
 Add this line to the bottom of the body
 ```
-<script src="https://unpkg.com/ds-modal-js@0.2.22/dist/ds-modal.min.js"></script>
+<script src="https://unpkg.com/ds-modal-js@0.2.30/dist/ds-modal.min.js"></script>
 ```
 
 ### Installation
@@ -83,10 +83,13 @@ dsModal.config({"zIndex": 9999});     // set modal z-index ( from 1 to 99999, de
 
 ### History
 ```
-v.0.2.20 - rewrote using promises
+v.0.2.30 - add зфввштп instead of scrollbar
 ```
 ```
-v.0.2.10 - rewrote using typescript
+v.0.2.20 - use promises
+```
+```
+v.0.2.10 - use typescript
 ```
 
 ### License
