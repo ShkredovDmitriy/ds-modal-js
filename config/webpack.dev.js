@@ -41,13 +41,6 @@ module.exports = {
   module: {
     rules: [
 
-      // // Javascript loader
-      // {
-      //   test: /\.js$/,
-      //   exclude: [/node_modules/, /config/],
-      //   use: ['babel-loader'],
-      // },
-
       // Typescript loader
       {
         test: /\.ts$/,
