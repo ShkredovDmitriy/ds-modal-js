@@ -6,6 +6,7 @@ const config = {
     // modal
   backgroundBlock: "ds-modal__background",
   backgroundClass: ".ds-modal__background",
+  scrollbarMeasure: "ds-modal-scrollbar-measure",
   modalContainer: ".ds-modal__container",
   modalWrapper: ".ds-modal__wrapper",
   modalClass: ".ds-modal",
