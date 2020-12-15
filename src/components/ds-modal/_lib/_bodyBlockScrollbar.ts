@@ -10,7 +10,6 @@ export default function bodyBlockScrollbar() {
     div.classList.add(config.scrollbarMeasure);
     document.body.append(div);
     const scrollbarWidth = div.offsetWidth - div.clientWidth
-    console.log(scrollbarWidth);
     singleSelector('body').style.paddingRight = scrollbarWidth + "px";
     singleSelector('body').classList.add(config.bodyBlockClass);
     div.remove();
