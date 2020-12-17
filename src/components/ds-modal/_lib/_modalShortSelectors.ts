@@ -5,7 +5,7 @@ function modalContainerSelector(dataValue:string):string {
 }
 
 function modalWrapperSelector(dataValue:string):string {
-  return `${config.modalContainer}[${config.modalData}="${dataValue}"] ${config.modalWrapper}`;
+  return `${config.modalContainer}[${config.modalData}="${dataValue}"] ${config.wrapperClass}`;
 }
 
 function modalSelector(dataValue:string):string {

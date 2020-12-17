@@ -11,7 +11,7 @@ function userEvent(event: any) {
   if(event && event.target) {
     const dataOpenValue: string = event.target.getAttribute(config.dataAttrOpen);
     const dataCloseValue: string = event.target.getAttribute(config.dataAttrClose);
-    const modalData: any = event.target.classList.contains('ds-modal__wrapper')? event.target.parentElement.getAttribute(config.modalData) : false;
+    const modalData: any = event.target.classList.contains(config.wrapperBlock)? event.target.parentElement.getAttribute(config.modalData) : false;
     if(dataOpenValue) modalApiOpen(dataOpenValue);
     else if(dataCloseValue) modalApiClose(dataCloseValue);
     else if(modalData) {

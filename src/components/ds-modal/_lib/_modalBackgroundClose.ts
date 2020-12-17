@@ -11,7 +11,7 @@ export default async function modalBackgroundOpen() {
   try {
     await modalComponentAnimation(config.backgroundClass, config.backgroundOutClass);
     await removeClassFromModalBackground(config.backgroundClass);
-    message(`${config.logComponent}: background closed`, config.logs);
+    message(`${config.logComponent}: ${config.logBg} ${config.logClosed}`, config.logs);
   } catch (e) {
     console.log(e);
   }

@@ -12,7 +12,7 @@ export default async function modalBackgroundOpen() {
   try {
     await addStylesToModalBackground(config.backgroundClass);
     await modalComponentAnimation(config.backgroundClass, config.backgroundInClass);
-    message(`${config.logComponent}: background opened`, config.logs);
+    message(`${config.logComponent}: ${config.logBg} ${config.logOpened}`, config.logs);
   } catch (e) {
     console.log(e);
   }

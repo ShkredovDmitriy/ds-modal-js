@@ -11,7 +11,7 @@ export default async function modalComponentOpen(dataValue:string) {
   try {
     await modalComponentAnimation(modalSelector(dataValue), config.modalOutClass);
     await removeClassFromModalContainer(modalContainerSelector(dataValue));
-    message(`${config.logComponent}: ${dataValue} closed`, config.logs);
+    message(`${config.logComponent}: ${dataValue} ${config.logClosed}`, config.logs);
   } catch (e) {
     console.log(e);
   }

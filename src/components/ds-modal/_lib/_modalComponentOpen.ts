@@ -9,7 +9,7 @@ async function addInlineStylesToModalContainer(modalContainerSelector:string) {
 }
 
 async function showLogWhenAnimationEnd(dataValue:string) {
-  message(`${config.logComponent}: ${dataValue} opened`, config.logs);
+  message(`${config.logComponent}: ${dataValue} ${config.logOpened}`, config.logs);
 }
 
 export default async function modalComponentOpen(dataValue:string) {

@@ -1,14 +1,15 @@
 const config = {
-  modalQuery: ".ds-modal__container[data-ds-modal]", // modal container selector
-  modalData: "data-ds-modal", // modal data attribute
-  dataAttrOpen: "data-ds-modal-open", // open button data attribute
-  dataAttrClose: "data-ds-modal-close", // close button data attribute
+  modalQuery: ".ds-modal__container[data-ds-modal]",
+  modalData: "data-ds-modal",
+  dataAttrOpen: "data-ds-modal-open",
+  dataAttrClose: "data-ds-modal-close",
     // modal
   backgroundBlock: "ds-modal__background",
   backgroundClass: ".ds-modal__background",
   scrollbarMeasure: "ds-modal-scrollbar-measure",
   modalContainer: ".ds-modal__container",
-  modalWrapper: ".ds-modal__wrapper",
+  wrapperBlock: "ds-modal__wrapper",
+  wrapperClass: ".ds-modal__wrapper",
   modalClass: ".ds-modal",
   buttonClose: ".ds-modal__close-button",
   // blocks
@@ -24,12 +25,16 @@ const config = {
   // logs text
   logComponent: "ds-modal",
   logNoModal: "no such modal exists",
+  logReady: "is ready to work",
+  logOpened: "opened",
+  logClosed: "closed",
+  logBg: "background",
   // setable variables
-  modals: new Map(), // all initialized modals
-  initialised: false, // initialised indicator
-  logs: false, // show logs in terminal
-  outClick: true, // close modal when click outside the modal
-  zIndex: 9998, // modal z-index
+  modals: new Map(),
+  initialised: false,
+  logs: false,
+  outClick: true,
+  zIndex: 9998,
 };
 
 export default config;
