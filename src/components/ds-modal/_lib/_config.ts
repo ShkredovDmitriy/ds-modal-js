@@ -24,7 +24,6 @@ const config = {
   // logs text
   logComponent: "ds-modal",
   logNoModal: "no such modal exists",
-
   // setable variables
   modals: new Map(), // all initialized modals
   initialised: false, // initialised indicator
