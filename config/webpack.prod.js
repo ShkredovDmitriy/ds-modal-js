@@ -145,37 +145,37 @@ const resolveTypescript = merge([
   }
 ]);
 
-// copy files to pack
-const copyFilesToPackage = merge([
-  {
-    plugins: [
-      new CopyWebpackPlugin({
-        patterns: [
-          {
-            from: 'docs/css/',
-            to: '../pack/dist/ds-modal.min.css',
-          },
-          {
-            from: 'docs/js/',
-            to: '../pack/dist/ds-modal.min.js',
-          },
-          {
-            from: 'package-pack.json',
-            to: '../pack/package.json',
-          },
-          {
-            from: 'README.md',
-            to: '../pack/README.md',
-          },
-          {
-            from: 'index.js',
-            to: '../pack/index.js',
-          },
-        ],
-      }),
-    ],
-  }
-]);
+// // copy files to pack
+// const copyFilesToPackage = merge([
+//   {
+//     plugins: [
+//       new CopyWebpackPlugin({
+//         patterns: [
+//           {
+//             from: 'docs/css/',
+//             to: '../pack/dist/ds-modal.min.css',
+//           },
+//           {
+//             from: 'docs/js/',
+//             to: '../pack/dist/ds-modal.min.js',
+//           },
+//           {
+//             from: 'package-pack.json',
+//             to: '../pack/package.json',
+//           },
+//           {
+//             from: 'README.md',
+//             to: '../pack/README.md',
+//           },
+//           {
+//             from: 'index.js',
+//             to: '../pack/index.js',
+//           },
+//         ],
+//       }),
+//     ],
+//   }
+// ]);
 
 module.exports = env => {
   return merge([
@@ -185,7 +185,6 @@ module.exports = env => {
     exportHTMLfiles,
     copyStaticFiles,
     exportCssToMainMinCss,
-    resolveTypescript,
-    copyFilesToPackage
+    resolveTypescript
   ]);
 };
