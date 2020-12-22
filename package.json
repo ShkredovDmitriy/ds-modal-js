@@ -46,7 +46,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
-    "package": "node config/packMakeAndPublish.js",
+    "pack": "node config/packMakeAndPublish.js",
     "test": "jest"
   },
   "jest": {
