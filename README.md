@@ -6,7 +6,6 @@ ds-modal-js - lightweight and easy to use javascript modal dialog
 
 ### Demo
 https://shkredovdmitriy.github.io/ds-modal-js/
-
 https://codepen.io/shkredovdmitriy/pen/MWepKGv
 
 
@@ -27,6 +26,39 @@ Add this line to head
 Add this line to the bottom of the body
 ```
 <script src="https://unpkg.com/ds-modal-js/dist/ds-modal.min.js"></script>
+```
+
+### Simple working example
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>ds-modal-js</title>
+  <link href="https://unpkg.com/ds-modal-js/dist/ds-modal.min.css" rel="stylesheet">
+</head>
+<body>
+
+<button data-ds-modal-open="example-modal">
+  Open example modal
+</button>
+
+<div class="ds-modal__container" data-ds-modal="example-modal">
+  <div class="ds-modal__wrapper">
+    <div class="ds-modal">
+      <div class="ds-modal__close-button" data-ds-modal-close="example-modal"></div>
+      <div class="ds-modal__header">Example</div>
+      <div class="ds-modal__body">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="ds-modal__footer"></div>
+    </div>
+  </div>
+</div>
+  
+  <script src="https://unpkg.com/ds-modal-js/dist/ds-modal.min.js"></script>
+</body>
+</html>
+
 ```
 
 ### Installation

@@ -48,6 +48,18 @@ module.exports = {
         use: 'ts-loader',
       },
 
+      // Babel
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      },
+
       // Inject css into the head with source maps
       {
         test: /\.(scss|css)$/,

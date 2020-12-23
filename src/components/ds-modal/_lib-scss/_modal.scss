@@ -11,6 +11,7 @@
 }
 
 .ds-modal {
+  flex-shrink: 0;
   position: relative;
   margin: 1rem;
   padding: 1rem;
@@ -63,7 +64,6 @@
 .ds-modal__body {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  min-width: 20rem;
   max-width: 35rem;
   text-align: center;
   font-size: 1.125rem;

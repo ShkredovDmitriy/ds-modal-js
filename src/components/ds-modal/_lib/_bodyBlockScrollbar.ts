@@ -8,10 +8,10 @@ export default function bodyBlockScrollbar() {
   if(hasVerticalScrollbar) {
     let div = document.createElement('div');
     div.classList.add(config.scrollbarMeasure);
-    document.body.append(div);
+    document.body.appendChild(div);
     const scrollbarWidth = div.offsetWidth - div.clientWidth
     singleSelector('body').style.paddingRight = scrollbarWidth + "px";
     singleSelector('body').classList.add(config.bodyBlockClass);
-    div.remove();
+    div.parentNode.removeChild(div);
   }
 }
