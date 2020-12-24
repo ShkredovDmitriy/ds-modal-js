@@ -78,10 +78,10 @@ Specify data-ds-modal-open="example-modal" on the button and data-ds-modal="exam
 
 ### API
 ```
-dsModal.open("example-modal");
+dsModal.open("example-modal");        // open modal data-ds-modal="example-modal"
 ```
 ```
-dsModal.close("example-modal");
+dsModal.close("example-modal");       // close modal data-ds-modal="example-modal"
 ```
 ```
 dsModal.status();                     // show status
