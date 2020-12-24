@@ -76,15 +76,13 @@ import dsModal from 'ds-modal-js';
 ### Use in automatic mode
 Specify data-ds-modal-open="example-modal" on the button and data-ds-modal="example-modal" on the modal. This is enough to work.
 
-### Use in manual mode
+### API
 ```
 dsModal.open("example-modal");
 ```
 ```
 dsModal.close("example-modal");
 ```
-
-### API
 ```
 dsModal.status();                     // show status
 ```
