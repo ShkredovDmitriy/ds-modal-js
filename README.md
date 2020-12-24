@@ -6,6 +6,7 @@ ds-modal-js - lightweight and easy to use javascript modal dialog
 
 ### Demo
 https://shkredovdmitriy.github.io/ds-modal-js/
+
 https://codepen.io/shkredovdmitriy/pen/MWepKGv
 
 
