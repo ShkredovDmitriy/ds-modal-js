@@ -1,11 +1,15 @@
-const paths = require('./_lib/paths');
+const paths = require('./_lib/_paths');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
 
-  // Set the mode to development or production
   mode: 'development',
+  entry: [paths.src + '/app/main.ts'],
+  output: {
+    path: paths.dist,
+    filename: 'js/main.min.js?[hash]',
+  },
 
   // Start a server for quick development
   devServer: {
@@ -17,16 +21,7 @@ module.exports = {
     port: 8080,
     host: '0.0.0.0',
     compress: false,
-  },
-
-  // Entery point
-  entry: [paths.src + '/app/main.ts'],
-
-  // Output js
-  output: {
-    path: paths.dist,
-    filename: 'js/main.min.js?[hash]',
-  },
+  }, 
 
   plugins: [
 

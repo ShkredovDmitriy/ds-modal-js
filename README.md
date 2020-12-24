@@ -6,6 +6,7 @@ ds-modal-js - lightweight and easy to use javascript modal dialog
 
 ### Demo
 https://shkredovdmitriy.github.io/ds-modal-js/
+
 https://codepen.io/shkredovdmitriy/pen/MWepKGv
 
 
@@ -71,36 +72,17 @@ import dsModal from 'ds-modal-js';
 ```
 @import 'ds-modal-js/dist/ds-modal.min.css';
 ```
-### Simple working example
-```
-<button data-ds-modal-open="example-modal">
-  Open example modal
-</button>
-```
-```
-<div class="ds-modal__container" data-ds-modal="example-modal">
-  <div class="ds-modal__wrapper">
-    <div class="ds-modal">
-      <div class="ds-modal__close-button" data-ds-modal-close="example-modal"></div>
-      <div class="ds-modal__header">Example</div>
-      <div class="ds-modal__body">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div class="ds-modal__footer"></div>
-    </div>
-  </div>
-</div>     
-```
+
 ### Use in automatic mode
 Specify data-ds-modal-open="example-modal" on the button and data-ds-modal="example-modal" on the modal. This is enough to work.
 
-### Use in manual mode
-```
-dsModal.open("example-modal");
-```
-```
-dsModal.close("example-modal");
-```
-
 ### API
+```
+dsModal.open("example-modal");        // open modal data-ds-modal="example-modal"
+```
+```
+dsModal.close("example-modal");       // close modal data-ds-modal="example-modal"
+```
 ```
 dsModal.status();                     // show status
 ```

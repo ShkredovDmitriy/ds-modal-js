@@ -1,6 +1,5 @@
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-// Typescript loader
 module.exports = function() {
   return {
     optimization: {
@@ -28,6 +27,9 @@ module.exports = function() {
           }
         }
       ],
+    },
+    resolve: {
+      extensions: [".ts", ".tsx", ".js", ".json"],
     },
   }
 }
