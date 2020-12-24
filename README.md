@@ -18,7 +18,7 @@ https://codepen.io/shkredovdmitriy/pen/MWepKGv
 - Using data attributes
 
 
-### Without installation
+### Use without installation
 
 Add this line to head
 ```

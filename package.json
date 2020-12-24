@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
+    "core-js": "^3.8.1",
+    "es6-promise-promise": "^1.0.0",
     "jest": "^26.6.1",
-    "rimraf": "^3.0.2",
     "ts-jest": "^26.4.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@types/jest": "^26.0.15",
