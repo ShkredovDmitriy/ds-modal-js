@@ -21,6 +21,7 @@ ds-modal-js - lightweight and easy to use javascript modal dialog
 
 For older browsers please use <a href="https://www.npmjs.com/package/promise-polyfill" target="_blank">promise-polyfill</a>
 
+
 ### Use without installation
 
 Add this line to head
@@ -31,6 +32,7 @@ Add this line to the bottom of the body
 ```
 <script src="https://unpkg.com/ds-modal-js/dist/ds-modal.min.js"></script>
 ```
+
 
 ### Simple working example
 ```
@@ -65,6 +67,7 @@ Add this line to the bottom of the body
 
 ```
 
+
 ### Installation
 ```
 npm install ds-modal-js -save
@@ -76,8 +79,10 @@ import dsModal from 'ds-modal-js';
 @import 'ds-modal-js/dist/ds-modal.min.css';
 ```
 
+
 ### Use in automatic mode
 Specify data-ds-modal-open="example-modal" on the button and data-ds-modal="example-modal" on the modal. This is enough to work.
+
 
 ### API
 ```
@@ -99,6 +104,7 @@ dsModal.config({"outClick": true});   // close modal on overlay click (true/fals
 dsModal.config({"zIndex": 9999});     // set modal z-index ( from 1 to 99999, default 9999)
 ```
 
+
 ### History
 ```
 v.0.2.30 - add padding instead of scrollbar
@@ -109,6 +115,7 @@ v.0.2.20 - use promises
 ```
 v.0.2.10 - use typescript
 ```
+
 
 ### License
 MIT License
