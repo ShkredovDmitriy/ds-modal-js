@@ -18,6 +18,10 @@ https://codepen.io/shkredovdmitriy/pen/MWepKGv
 - Using data attributes
 
 
+### How to use in older browsers
+
+For older browsers please use <a href="https://www.npmjs.com/package/promise-polyfill" target="_blank">promise-polyfill</a>
+
 ### Use without installation
 
 Add this line to head
