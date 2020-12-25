@@ -1,13 +1,9 @@
 ## ds-modal-js
 <img src="https://badgen.net/npm/v/ds-modal-js"/><img src="https://badgen.net/npm/dw/ds-modal-js"/></br>
-
 ds-modal-js - lightweight and easy to use javascript modal dialog
 
-
 ### Demo
-
 <a href="https://shkredovdmitriy.github.io/ds-modal-js/" target="_blank">github.io</a> <a href="https://codepen.io/shkredovdmitriy/pen/MWepKGv" target="_blank">codepen.io</a> 
-
 
 ### Advantages
 - Easy to use
@@ -16,14 +12,10 @@ ds-modal-js - lightweight and easy to use javascript modal dialog
 - Closing modal on overlay click </br>
 - Using data attributes
 
-
 ### How to use in older browsers
-
 For older browsers please use <a href="https://www.npmjs.com/package/promise-polyfill" target="_blank">promise-polyfill</a>
 
-
 ### Use without installation
-
 Add this line to head
 ```
 <link href="https://unpkg.com/ds-modal-js/dist/ds-modal.min.css" rel="stylesheet">
@@ -32,7 +24,6 @@ Add this line to the bottom of the body
 ```
 <script src="https://unpkg.com/ds-modal-js/dist/ds-modal.min.js"></script>
 ```
-
 
 ### Simple working example
 ```
@@ -67,7 +58,6 @@ Add this line to the bottom of the body
 
 ```
 
-
 ### Installation
 ```
 npm install ds-modal-js -save
@@ -79,10 +69,8 @@ import dsModal from 'ds-modal-js';
 @import 'ds-modal-js/dist/ds-modal.min.css';
 ```
 
-
 ### Use in automatic mode
 Specify data-ds-modal-open="example-modal" on the button and data-ds-modal="example-modal" on the modal. This is enough to work.
-
 
 ### API
 ```
@@ -103,19 +91,6 @@ dsModal.config({"outClick": true});   // close modal on overlay click (true/fals
 ```
 dsModal.config({"zIndex": 9999});     // set modal z-index ( from 1 to 99999, default 9999)
 ```
-
-
-### History
-```
-v.0.2.30 - add padding instead of scrollbar
-```
-```
-v.0.2.20 - use promises
-```
-```
-v.0.2.10 - use typescript
-```
-
 
 ### License
 MIT License
