@@ -13,15 +13,17 @@ export default async function modalComponentOpen(dataValue:string) {
     dataValue: dataValue
   }
 
-  config.beforeClose(objestForApply);
+  
 
   try {
+    config.beforeClose(objestForApply);
     await modalComponentAnimation(modalSelector(dataValue), config.modalOutClass);
     await removeClassFromModalContainer(modalContainerSelector(dataValue));
+    config.afterClose(objestForApply);
     message(`${config.logComponent}: ${dataValue} ${config.logClosed}`, config.logs);
   } catch (e) {
     console.log(e);
   }
 
-  config.afterClose(objestForApply);
+  
 }

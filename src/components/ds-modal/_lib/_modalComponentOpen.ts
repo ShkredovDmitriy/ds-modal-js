@@ -8,25 +8,19 @@ async function addInlineStylesToModalContainer(modalContainerSelector:string) {
   singleSelector(modalContainerSelector).classList.add(config.containerBlockClass);
 }
 
-async function showLogWhenAnimationEnd(dataValue:string) {
-  message(`${config.logComponent}: ${dataValue} ${config.logOpened}`, config.logs);
-}
-
 export default async function modalComponentOpen(dataValue:string) {
 
   const objestForApply = {
     dataValue: dataValue
   }
-
-  config.beforeOpen(objestForApply);
     
   try {
+    config.beforeOpen(objestForApply);
     await addInlineStylesToModalContainer(modalContainerSelector(dataValue));
     await modalComponentAnimation(modalSelector(dataValue), config.modalInClass);
-    await showLogWhenAnimationEnd(dataValue);
+    config.afterOpen(objestForApply);
+    message(`${config.logComponent}: ${dataValue} ${config.logOpened}`, config.logs);
   } catch (e) {
     console.log(e);
   }
-
-  config.afterOpen(objestForApply);
 }
