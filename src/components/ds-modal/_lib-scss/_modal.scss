@@ -28,10 +28,10 @@
   right: 1rem;
   width: 1.5rem;
   height: 1.5rem;
-  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g><polygon points="28.71 4.71 27.29 3.29 16 14.59 4.71 3.29 3.29 4.71 14.59 16 3.29 27.29 4.71 28.71 16 17.41 27.29 28.71 28.71 27.29 17.41 16 28.71 4.71" fill="grey"/></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g><polygon points="28.71 4.71 27.29 3.29 16 14.59 4.71 3.29 3.29 4.71 14.59 16 3.29 27.29 4.71 28.71 16 17.41 27.29 28.71 28.71 27.29 17.41 16 28.71 4.71" fill="grey"/></g></svg>');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
   cursor: pointer;
 }
 
