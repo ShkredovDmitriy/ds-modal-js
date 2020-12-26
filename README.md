@@ -91,6 +91,18 @@ dsModal.config({"outClick": true});   // close modal on overlay click (true/fals
 ```
 dsModal.config({"zIndex": 9999});     // set modal z-index ( from 1 to 99999, default 9999)
 ```
+```
+dsModal.beforeOpen( () => { some code } );     // use callback before modal open
+```
+```
+dsModal.afterOpen( () => { some code } );     // use callback after modal open
+```
+```
+dsModal.beforeClose( () => { some code } );     // use callback before modal close
+```
+```
+dsModal.afterClose( () => { some code } );     // use callback after modal close
+```
 
 ### License
 MIT License
