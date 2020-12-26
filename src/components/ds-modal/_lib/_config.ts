@@ -29,6 +29,11 @@ const config = {
   logOpened: "opened",
   logClosed: "closed",
   logBg: "background",
+  // callbacks 
+  beforeOpen: new Function,
+  afterOpen: new Function,
+  beforeClose: new Function,
+  afterClose: new Function,
   // setable variables
   modals: new Map(),
   initialised: false,

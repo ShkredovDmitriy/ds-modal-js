@@ -8,6 +8,13 @@ async function removeClassFromModalContainer(modalContainerSelector:string) {
 }
 
 export default async function modalComponentOpen(dataValue:string) {
+
+  const objestForApply = {
+    dataValue: dataValue
+  }
+
+  config.beforeClose(objestForApply);
+
   try {
     await modalComponentAnimation(modalSelector(dataValue), config.modalOutClass);
     await removeClassFromModalContainer(modalContainerSelector(dataValue));
@@ -15,4 +22,6 @@ export default async function modalComponentOpen(dataValue:string) {
   } catch (e) {
     console.log(e);
   }
+
+  config.afterClose(objestForApply);
 }

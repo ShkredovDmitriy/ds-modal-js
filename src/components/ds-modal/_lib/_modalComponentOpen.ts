@@ -13,6 +13,13 @@ async function showLogWhenAnimationEnd(dataValue:string) {
 }
 
 export default async function modalComponentOpen(dataValue:string) {
+
+  const objestForApply = {
+    dataValue: dataValue
+  }
+
+  config.beforeOpen(objestForApply);
+    
   try {
     await addInlineStylesToModalContainer(modalContainerSelector(dataValue));
     await modalComponentAnimation(modalSelector(dataValue), config.modalInClass);
@@ -20,4 +27,6 @@ export default async function modalComponentOpen(dataValue:string) {
   } catch (e) {
     console.log(e);
   }
+
+  config.afterOpen(objestForApply);
 }
