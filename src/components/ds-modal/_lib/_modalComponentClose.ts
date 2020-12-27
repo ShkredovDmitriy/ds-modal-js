@@ -11,9 +11,7 @@ export default async function modalComponentOpen(dataValue:string) {
 
   const objestForApply = {
     dataValue: dataValue
-  }
-
-  
+  } 
 
   try {
     config.beforeClose(objestForApply);
@@ -24,6 +22,4 @@ export default async function modalComponentOpen(dataValue:string) {
   } catch (e) {
     console.log(e);
   }
-
-  
 }
