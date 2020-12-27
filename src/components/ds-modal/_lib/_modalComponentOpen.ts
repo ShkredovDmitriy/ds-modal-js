@@ -10,15 +10,15 @@ async function addInlineStylesToModalContainer(modalContainerSelector:string) {
 
 export default async function modalComponentOpen(dataValue:string) {
 
-  const objestForApply = {
+  const modalData = {
     dataValue: dataValue
   }
     
   try {
-    config.beforeOpen(objestForApply);
+    config.beforeOpen(modalData);
     await addInlineStylesToModalContainer(modalContainerSelector(dataValue));
     await modalComponentAnimation(modalSelector(dataValue), config.modalInClass);
-    config.afterOpen(objestForApply);
+    config.afterOpen(modalData);
     message(`${config.logComponent}: ${dataValue} ${config.logOpened}`, config.logs);
   } catch (e) {
     console.log(e);

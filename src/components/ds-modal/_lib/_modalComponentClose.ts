@@ -9,15 +9,15 @@ async function removeClassFromModalContainer(modalContainerSelector:string) {
 
 export default async function modalComponentOpen(dataValue:string) {
 
-  const objestForApply = {
+  const modalData = {
     dataValue: dataValue
   } 
 
   try {
-    config.beforeClose(objestForApply);
+    config.beforeClose(modalData);
     await modalComponentAnimation(modalSelector(dataValue), config.modalOutClass);
     await removeClassFromModalContainer(modalContainerSelector(dataValue));
-    config.afterClose(objestForApply);
+    config.afterClose(modalData);
     message(`${config.logComponent}: ${dataValue} ${config.logClosed}`, config.logs);
   } catch (e) {
     console.log(e);
