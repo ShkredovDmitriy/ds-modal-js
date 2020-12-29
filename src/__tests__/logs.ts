@@ -5,5 +5,5 @@ test('message: test, logs: true ', function() {
 });
 
 test('message: test, logs: false ', function() {
-  expect(message("test", false)).toBe("");
+  expect(message("test", false)).toBe(undefined);
 });
