@@ -1,5 +1,5 @@
 ## ds-modal-js
-<img src="https://travis-ci.com/ShkredovDmitriy/ds-modal-js.svg?branch=master"/> <img src="https://badgen.net/npm/v/ds-modal-js"/> <img src="https://badgen.net/npm/dw/ds-modal-js"/>
+<img src="https://travis-ci.com/ShkredovDmitriy/ds-modal-js.svg?branch=master"/> <img src='https://coveralls.io/repos/github/ShkredovDmitriy/ds-modal-js/badge.svg?branch=master' alt='Coverage Status' /> <img src="https://badgen.net/npm/v/ds-modal-js"/> <img src="https://badgen.net/npm/dw/ds-modal-js"/>
 
 ds-modal-js - lightweight and easy to use javascript modal dialog
 
