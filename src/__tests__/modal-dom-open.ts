@@ -27,8 +27,10 @@ test('displays a modal after a click', () => {
   dsModal.init();
 
   expect(document.querySelector(".ds-modal__container").classList.contains("ds-modal__container-block")).toBe(false);
+  expect(document.getElementById("dsModalBackground").classList.contains("ds-modal__container-block")).toBe(false);
 
   document.getElementById("buttonOpenModal").click();
   
   expect(document.querySelector(".ds-modal__container").classList.contains("ds-modal__container-block")).toBe(true);
+  expect(document.getElementById("dsModalBackground").classList.contains("ds-modal__container-block")).toBe(true);
 });
